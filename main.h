@@ -28,11 +28,21 @@ char c;
 int (*f)(va_list ap, flags_t *f);
 } ph;
 
+int print_int(va_list l, flags_t *f);
+void print_number(int n);
+int print_unsigned(va_list l, flags_t *f);
+int count_digit(int i);
+
 int _putchar(char c);
 void _puts(char *str);
 int _strlen(char *s);
 
 int _printf(const char *format, ...);
+
+int (*get_print(char s))(va_list, flats_t *);
+
+int get_flag(char s, flags_t *f);
+
 char *convert_to(char representation[], unsigned int num, int base);
 int function_manager(char c, va_list arg);
 int _switch(char c, va_list arg);
