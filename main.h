@@ -33,8 +33,13 @@ void print_number(int n);
 int print_unsigned(va_list l, flags_t *f);
 int count_digit(int i);
 
+int print_hex(va_list l, flags_t *f);
+int print_hex_big(va_list l, flags_t *f);
+int print_binary(va_list l, flags_t *f);
+int print_octal(va_list l, flags_t *f);
+
 int _putchar(char c);
-void _puts(char *str);
+int _puts(char *str);
 int _strlen(char *s);
 
 int _printf(const char *format, ...);
