@@ -39,7 +39,7 @@ int _strlen(char *s);
 
 int _printf(const char *format, ...);
 
-int (*get_print(char s))(va_list, flats_t *);
+int (*get_print(char s))(va_list, flags_t *);
 
 int get_flag(char s, flags_t *f);
 
