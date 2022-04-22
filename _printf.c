@@ -5,7 +5,7 @@
  * Description: this function implements some functions of printf
  * Return: number of characters printed
  */
-int _print(const *format, ...)
+int _printf(const char *format, ...)
 {
 int (*pfunc)(va_list, flags_t *);
 const char *p;
@@ -38,8 +38,6 @@ count += (pfunc)
 : _printf("%%%c", *p);
 }
 else
-count += _putchar(*p);
-}
 count += _putchar(*p);
 }
 
